@@ -132,3 +132,19 @@ a, a:visited {
     /* Misc */
     opacity: 1;
 }
+
+.rs-logo {
+    width: 64px;
+    margin-right: 10px;
+}
+
+.footer {
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 1200px;
+    margin-top: 40px;
+    box-shadow: rgb(56 52 45 / 15%) 5px 9px 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
