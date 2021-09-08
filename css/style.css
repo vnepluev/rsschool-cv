@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background-color: darkgray;
+}
+
+.wrapper {
+    display: flex;
+    margin: 10px auto;
+    max-width: 1200px;
+    margin-top: 40px;
+    box-shadow: rgb(56 52 45 / 15%) 5px 9px 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.left-content {
+    width: 320px;
+    padding: 0px 10px;
+    background-color: #1e2939;
+}
+
+.right-content {
+    padding: 110px 90px;
+}
+
+.logo {
+    width: 280px;
+    margin-top: 20px;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.figcaption {
+    position: relative;
+    left: 10px;
+    top: -40px;
+    z-index: 6;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #737982;
+}
+
+.details {
+    margin-left: 15px;
+}
+
+.left-content__container {
+    margin: 40px 20px 0;
+}
+
+.white {
+    color: white;
+}
+.dark-white {
+    color: #737982;
+}
+.orange {
+    color: #ff6b08;
+}
+
+/* Заголовки */
+.h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 89px;
+    margin-bottom: 10px;
+}
+.h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 24px 0 20px;
+}
+.h3 {
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.list__item {
+    margin: 10px 0 15px 15px;
+}
+
+.list--nomarkers {
+    list-style-type: none;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+
+.declaration-order {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    /* Box-model */
+    display: block;
+    float: right;
+    width: 100px;
+    height: 100px;
+
+    /* Typography */
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+
+    /* Visual */
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    /* Misc */
+    opacity: 1;
+}
+
+.rs-logo {
+    width: 64px;
+    margin-right: 10px;
+}
+
+.footer {
+    display: flex;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 1200px;
+    margin-top: 40px;
+    box-shadow: rgb(56 52 45 / 15%) 5px 9px 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
