@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 .header,
 .menu_icon {
     display: none;
@@ -224,6 +228,16 @@ a, a:visited {
         display: block;
     }
 
+    .menu__link {
+        font-size: 24px;
+    }
+
+    .header__link {
+        color: whitesmoke;
+        font-size: 24px;
+        z-index: 5;
+    }
+
     .menu_icon span,
     .menu_icon::before,
     .menu_icon::after {
@@ -231,7 +245,7 @@ a, a:visited {
         position: absolute;
         width: 100%;
         height: 10%;
-        background-color: #111111;
+        background-color: whitesmoke;
         transition: all 0.5s easy 0s;
     }
 
@@ -253,15 +267,35 @@ a, a:visited {
         transform: scale(1) translate(0, -50%);
     }
 
+    .menu_icon._active span {
+        transform: scale(0) translate(0, -50%);
+    }
+
+    .menu_icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    .menu_icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+
+
     .menu-body {
+        overflow: auto;
         position: fixed;
-        left: 0;
         top: 0;
+        left: -100%;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 100px 30px 30px 30px;
         transition: left 0.3s ease 0s;
+    }
+
+    .menu-body._active {
+        left: 0;
     }
 
 }
