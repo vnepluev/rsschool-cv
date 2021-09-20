@@ -313,4 +313,8 @@ a, a:visited {
         width: 100%;
     }
 
+    .img-project {
+        width: 240px;
+    }
+
 }
