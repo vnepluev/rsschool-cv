@@ -10,6 +10,34 @@
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__container">
+            <a class="header__link" href="/">CV PAGE</a>
+
+            <!-- burger menu -->
+            <div class="menu_icon">
+                <span></span>
+            </div>
+            <!-- ./burger menu -->
+            <nav class="menu-body">
+                <ul class="menu">
+                    <li class="menu__items">
+                        <a class="menu__link" href="#works">Works</a>
+                    </li>
+                    <li class="menu__items">
+                        <a class="menu__link" href="#contacts">Contacts</a>
+                    </li>
+                    <li class="menu__items">
+                        <a class="menu__link" href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.header__container -->
+    </header>
+    <!-- /.header -->
+
     <main class="wrapper">
         <aside class="left-content">
             <figure>
@@ -18,21 +46,19 @@
             </figure>
 
             <div class="left-content__container">
-                <h1 class="h2 white">Contacts</h1>
-                <nav>
-                    <ul class="list list--nomarkers">
-                        <li class="list__item"><a class="link" href="https://nepluev.com">[website]</a></li>
-                        <li class="list__item"><a class="link"
-                                href="https://www.instagram.com/travelstory4you">[instagram]</a>
-                        </li>
-                        <li class="list__item"><a class="link" href="https://vk.com/neplyuev">[vkontakte]</a></li>
-                        <li class="list__item"><a class="link" href="https://fasad-decor-moscow.ru">[portfolio]</a></li>
-                    </ul>
-                </nav>
+                <h2 id="contacts" class="h2 white">Contacts</h2>
+                <ul class="list list--nomarkers">
+                    <li class="list__item"><a class="link" href="https://nepluev.com">[website]</a></li>
+                    <li class="list__item"><a class="link"
+                            href="https://www.instagram.com/travelstory4you">[instagram]</a>
+                    </li>
+                    <li class="list__item"><a class="link" href="https://vk.com/neplyuev">[vkontakte]</a></li>
+                    <li class="list__item"><a class="link" href="https://fasad-decor-moscow.ru">[portfolio]</a></li>
+                </ul>
             </div>
 
             <div class="left-content__container">
-                <h2 class="h2 white">Hard skills</h2>
+                <h2 id="skills" class="h2 white">Hard skills</h2>
                 <ul class="list orange">
                     <li class="list__item"><span class="dark-white">HTML 5</span></li>
                     <li class="list__item"><span class="dark-white">CSS / SCSS / LESS / SASS</span></li>
@@ -53,8 +79,8 @@
         </aside>
         <!-- /.left-content -->
         <section class="right-content">
-            <h2 class="h3">Frontend Developer</h2>
-            <h2 class="h1">Valeriy V Nepluev</h2>
+            <h1 class="h1">Frontend Developer</h1>
+            <h2 class="h2">Valeriy V Nepluev</h2>
             <p class="description">I have been a professional photographer since 2007. Since the end of 2020, I
                 have
                 been actively studying front end
@@ -65,6 +91,18 @@
                 <li class="list__item"><a class="link" href="https://fasad-decor-moscow.ru/">fasad-decor-moscow.ru</a>
                     ...... [HTML, CSS3, SASS, JS, BOOTSTRAP 5, GULP]</li>
             </ul>
+
+            <h2 class="h2">Code</h2>
+            <pre><code id="works">
+function absentVowel(x) {
+    let vowels = 'aeiou';
+    for (var i in vowels) {
+        if (x.indexOf(vowels[i]) == -1) {
+            return Number(i);
+        }
+    }
+}
+            </code></pre>
 
             <h2 class="h2">Work experience and education</h2>
             <details class="details">
