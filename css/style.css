@@ -245,7 +245,7 @@ a, a:visited {
         position: absolute;
         width: 100%;
         height: 10%;
-        background-color: whitesmoke;
+        background-color: #111111;
         transition: all 0.5s easy 0s;
     }
 
@@ -269,16 +269,19 @@ a, a:visited {
 
     .menu_icon._active span {
         transform: scale(0) translate(0, -50%);
+        background-color: whitesmoke;
     }
 
     .menu_icon._active::before {
         top: 50%;
         transform: rotate(-45deg) translate(0, -50%);
+        background-color: whitesmoke;
     }
 
     .menu_icon._active::after {
         bottom: 50%;
         transform: rotate(45deg) translate(0, 50%);
+        background-color: whitesmoke;
     }
 
 
@@ -296,6 +299,18 @@ a, a:visited {
 
     .menu-body._active {
         left: 0;
+    }
+
+    .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
     }
 
 }
