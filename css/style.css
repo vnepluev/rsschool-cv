@@ -233,7 +233,7 @@ a, a:visited {
     }
 
     .header__link {
-        color: whitesmoke;
+        color: #111111;
         font-size: 24px;
         z-index: 5;
     }
